@@ -8,9 +8,9 @@ package com.company;
  * a correct IP of any type.
  */
 public class ValidateIPAddress {
-	private final String v4 = "IPv4";
-	private final String v6 = "IPv6";
-	private final String none = "Neither";
+	public static final String v4 = "IPv4";
+	public static final String v6 = "IPv6";
+	public static final String none = "Neither";
 
 	public String validIPAddress(String IP) {
 		if (isV4(IP)) {

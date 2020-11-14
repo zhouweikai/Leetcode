@@ -15,13 +15,12 @@ public class ReorderList {
 				head.next.next == null) {
 			return;
 		}
+		// find middle point
 		ListNode slow = head, fast = head;
-		findMid(slow, fast);
-		if (fast != null) {
+		while (fast != null && fast.next != null) {
 			slow = slow.next;
+			fast = fast.next.next;
 		}
-		// reaching here, slow Pointer is the head
-		// second half list
 		ListNode tail = head;
 		while (tail.next != slow) {
 			tail = tail.next;
@@ -29,13 +28,6 @@ public class ReorderList {
 		tail.next = null;
 		ListNode secHead = reverse(slow);
 		merge(head, secHead);
-	}
-
-	private void findMid(ListNode slow, ListNode fast) {
-		while (fast != null && fast.next != null) {
-			slow = slow.next;
-			fast = fast.next.next;
-		}
 	}
 
 	private ListNode reverse(ListNode head) {
@@ -54,24 +46,10 @@ public class ReorderList {
 	}
 
 	private void merge(ListNode h1, ListNode h2) {
-		ListNode one = h1;
-		while (one != null) {
-			System.out.println(one.val);
-			one = one.next;
-		}
-		System.out.println("-----------");
-		ListNode two = h2;
-		while (two != null) {
-			System.out.println(two.val);
-			two = two.next;
-		}
 		ListNode dummy = new ListNode(-1);
 		ListNode cur = dummy;
 		ListNode cur1 = h1;
 		ListNode cur2 = h2;
-		if (cur1 == null && cur2 == null) {
-			return;
-		}
 		while (cur1 != null && cur2 != null) {
 			cur.next = cur1;
 			cur1 = cur1.next;
@@ -79,8 +57,8 @@ public class ReorderList {
 			cur2 = cur2.next;
 			cur = cur.next.next;
 		}
-		if (cur1 != null) {
-			cur.next = cur1;
+		if (cur2 != null) {
+			cur.next = cur2;
 		}
 		h1 = dummy.next;
 	}

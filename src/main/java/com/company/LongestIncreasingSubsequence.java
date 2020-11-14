@@ -20,7 +20,6 @@ public class LongestIncreasingSubsequence {
 					j = m;
 			}
 			tails[i] = x;
-			System.out.println(tails.toString());
 			if (i == size) ++size;
 		}
 		return size;
