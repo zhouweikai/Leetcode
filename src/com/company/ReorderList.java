@@ -90,22 +90,4 @@ public class ReorderList {
 	   ListNode next;
 	   ListNode(int x) { val = x; }
 	}
-
-	public static void main(String[] args) {
-		ListNode h1 = new ListNode(1);
-		h1.next = new ListNode(2);
-		h1.next.next = new ListNode(3);
-		h1.next.next.next = new ListNode(4);
-		ListNode cur = h1;
-		while (cur != null) {
-			System.out.println(cur.val);
-			cur = cur.next;
-		}
-		ReorderList lc = new ReorderList();
-		lc.reorderList(h1);
-		while (h1 != null) {
-			System.out.println(h1.val);
-			h1 = h1.next;
-		}
-	}
 }

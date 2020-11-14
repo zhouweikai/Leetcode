@@ -75,10 +75,4 @@ public class ValidateIPAddress {
 		}
 		return true;
 	}
-
-	public static void main(String[] args) {
-		ValidateIPAddress lc = new ValidateIPAddress();
-		String IP = "172.16.254.1";
-		lc.validIPAddress(IP);
-	}
 }

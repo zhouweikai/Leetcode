@@ -35,11 +35,4 @@ public class ValidPalindrome {
 		}
 		return false;
 	}
-
-	public static void main(String[] args) {
-		String s = "0P";
-		ValidPalindrome lc = new ValidPalindrome();
-		boolean bl = lc.isPalindrome(s);
-		System.out.println(bl);
-	}
 }

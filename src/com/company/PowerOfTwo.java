@@ -17,8 +17,4 @@ public class PowerOfTwo {
 		}
 		return true;
 	}
-
-	public static void main(String[] args) {
-
-	}
 }
