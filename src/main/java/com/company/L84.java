@@ -10,7 +10,7 @@ import java.util.Deque;
  * where the width of each bar is 1, find the area of largest rectangle in
  * the histogram.
  */
-public class LargestRectangleInHistogram {
+public class L84 {
 	public int largestRectangleArea(int[] heights) {
 		int result = 0;
 		Deque<Integer> stack = new ArrayDeque<>();

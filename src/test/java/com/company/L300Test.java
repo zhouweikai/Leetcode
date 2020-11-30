@@ -4,11 +4,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class LongestIncreasingSubsequenceTest {
+public class L300Test {
 	@Test
 	public void testLengthOfLIS() {
 		// Arrange
-		LongestIncreasingSubsequence lc = new LongestIncreasingSubsequence();
+		L300 lc = new L300();
 		int[] nums = new int[]{10,9,2,5,3,7,101,18};
 
 		// Act & Assert

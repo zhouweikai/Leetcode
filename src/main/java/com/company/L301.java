@@ -14,7 +14,7 @@ import java.util.Set;
  * make the input string valid. Return all possible results.
  */
 
-public class RemoveInvalidParentheses {
+public class L301 {
 	public List<String> removeInvalidParentheses(String s) {
 		List<String> res = new ArrayList<>();
 		// sanity check

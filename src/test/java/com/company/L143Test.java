@@ -4,22 +4,22 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class ReorderListTest {
+public class L143Test {
 	@Test
 	public void testReorderList() {
 		// Arrange
-		ReorderList.ListNode h1 = new ReorderList.ListNode(1);
-		h1.next = new ReorderList.ListNode(2);
-		h1.next.next = new ReorderList.ListNode(3);
-		h1.next.next.next = new ReorderList.ListNode(4);
+		L143.ListNode h1 = new L143.ListNode(1);
+		h1.next = new L143.ListNode(2);
+		h1.next.next = new L143.ListNode(3);
+		h1.next.next.next = new L143.ListNode(4);
 
-		ReorderList lc = new ReorderList();
+		L143 lc = new L143();
 
 		// Act
 		lc.reorderList(h1);
 
 		// Assert
-		ReorderList.ListNode cur = h1;
+		L143.ListNode cur = h1;
 		assertEquals(1, cur.val);
 		cur = cur.next;
 		assertEquals(4, cur.val);

@@ -4,12 +4,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertTrue;
 
-public class ValidPalindromeTest {
+public class L125Test {
 	@Test
 	public void testIsPalindrome() {
 		// Arrange
 		String s = "0P01";
-		ValidPalindrome lc = new ValidPalindrome();
+		L125 lc = new L125();
 
 		// Act & Assert
 		assertTrue(lc.isPalindrome(s));

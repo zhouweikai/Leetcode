@@ -7,7 +7,7 @@ package com.company;
  *
  * Return the quotient after dividing dividend by divisor.
  */
-public class DivideTwoIntegers {
+public class L29 {
 	public int divide(int dividend, int divisor) {
 		if (dividend == 0) {
 			return 0;

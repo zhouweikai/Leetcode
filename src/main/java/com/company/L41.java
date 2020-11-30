@@ -5,7 +5,7 @@ package com.company;
  *
  * Given an unsorted integer array nums, find the smallest missing positive integer.
  */
-public class FirstMissingPositive {
+public class L41 {
 	public int firstMissingPositive(int[] nums) {
 		for (int i = 0; i < nums.length; i++) {
 			while (nums[i] <= nums.length && nums[i] >= 1 && nums[i] != nums[nums[i] - 1]) {

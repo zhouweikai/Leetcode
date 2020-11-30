@@ -6,7 +6,7 @@ package com.company;
  * Given an unsorted array of integers, find the length of longest
  * increasing subsequence.
  */
-public class LongestIncreasingSubsequence {
+public class L300 {
 	public int lengthOfLIS(int[] nums) {
 		int[] tails = new int[nums.length];
 		int size = 0;

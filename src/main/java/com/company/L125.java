@@ -6,7 +6,7 @@ package com.company;
  * Given a string, determine if it is a palindrome, considering
  * only alphanumeric characters and ignoring cases.
  */
-public class ValidPalindrome {
+public class L125 {
 	public boolean isPalindrome(String s) {
 		if (s.isEmpty() || s.length() <= 1) {
 			return true;

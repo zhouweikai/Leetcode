@@ -7,7 +7,7 @@ package com.company;
  * from top left to bottom right, which minimizes the sum of all numbers
  * along its path.
  */
-public class MinimumPathSum {
+public class L64 {
 	// dp
 	public int minPathSum(int[][] grid) {
 		// dp[i][j] = min sum from (0,0) to (i,j)

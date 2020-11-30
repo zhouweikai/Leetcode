@@ -11,7 +11,7 @@ import java.util.Set;
  * Find the length of the longest substring T of a given string (consists of lowercase
  * letters only) such that every character in T appears no less than k times.
  */
-public class LongestSubstringWithAtLeastKRepeatingCharacters {
+public class L395 {
 	// Solution 1: brutal force
 	public int longestSubstring(String s, int k) {
 		if (s == null || s.length() == 0) {

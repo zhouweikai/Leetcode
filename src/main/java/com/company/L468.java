@@ -7,7 +7,7 @@ package com.company;
  * "IPv6" if IP is a valid IPv6 address or "Neither" if IP is not
  * a correct IP of any type.
  */
-public class ValidateIPAddress {
+public class L468 {
 	public static final String v4 = "IPv4";
 	public static final String v6 = "IPv6";
 	public static final String none = "Neither";

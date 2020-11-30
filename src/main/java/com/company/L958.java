@@ -13,7 +13,7 @@ import java.util.Queue;
  * completely filled, and all nodes in the last level are as far left as possible.
  * It can have between 1 and 2h nodes inclusive at the last level h.
  */
-public class CheckCompletenessOfABinaryTree {
+public class L958 {
 	public class TreeNode {
 		int val;
 		TreeNode left;

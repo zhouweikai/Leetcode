@@ -7,7 +7,7 @@ package com.company;
  *
  * An integer n is a power of two, if there exists an integer x such that n == 2^x.
  */
-public class PowerOfTwo {
+public class L231 {
 	public boolean isPowerOfTwo(int n) {
 		while (n > 0) {
 			if ((n & 1) == 0) {

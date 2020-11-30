@@ -19,7 +19,7 @@ package com.company;
  *
  * Return an array representing the number of bricks that will drop after each erasure in sequence.
  */
-public class BricksFallingWhenHit {
+public class L803 {
 	private final int[][] dirs = new int[][]{ {0,-1},{0,1},{-1,0},{1,0} };
 
 	/**

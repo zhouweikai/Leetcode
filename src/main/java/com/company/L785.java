@@ -10,7 +10,7 @@ import java.util.Queue;
  *
  * Given an undirected graph, return true if and only if it is bipartite.
  */
-public class IsGraphBipartite {
+public class L785 {
 	// is graph bipartite
 	// use BFS to do
 	public boolean isBipartite(int[][] graph) {

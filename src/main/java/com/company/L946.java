@@ -8,7 +8,7 @@ import java.util.Deque;
  *
  * Given two sequences pushed and popped with distinct values, return true if and only if this could have been the result of a sequence of push and pop operations on an initially empty stack.
  */
-public class ValidateStackSequences {
+public class L946 {
 	public boolean validateStackSequences(int[] pushed, int[] popped) {
 		int j = 0;
 		Deque<Integer> stack = new ArrayDeque<>();
