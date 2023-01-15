@@ -3,7 +3,7 @@ package com.company;
 import org.junit.jupiter.api.Test;
 
 import static com.company.L468.none;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class L468Test {
 	@Test
