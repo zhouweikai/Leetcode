@@ -5,3 +5,6 @@ leetcode.iml
 src/.DS_Store
 src/com/.DS_Store
 target/
+build/
+.gradle/
+gradle/libs.versions.toml
